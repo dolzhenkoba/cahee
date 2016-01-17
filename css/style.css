@@ -1,8 +1,12 @@
 body{
-
-}
+  font: 300 17px/1.58 "Raleway", Arial, sans-serif;
+  color: #262626;
+ }
 
 /* Typography */
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
 a,
 input[type="submit"],
 input[type="button"],
@@ -16,6 +20,10 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -51,7 +59,158 @@ textarea {
 }
 
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+.ba-grid + .ba-grid {
+    margin-top: 30px;
 }
+.ba-grid > [class*="ba-width-"] {
+    float: left;
+    padding-left: 30px;
+}
+
+.ba-grid {
+    margin-left: -30px;
+}
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+.ba-fresh {
+	min-height: 100vh;
+	background: #FFF url(../img/fresh.jpg) 50%;
+	background-size: cover;
+	position: relative;
+}
+.ba-header {
+	padding-top: 50px;
+}
+.ba-menu {
+	font-size: 0;
+	font-weight: 700;
+	margin: 7px 0 0 0;
+}
+.ba-menu li {
+	display: inline-block;
+	font-size: 16px;
+	padding-top: 3px;
+	margin-left: 37px;
+}
+.ba-menu a {
+	color: #262626;
+	text-decoration: none;
+}
+.ba-active {
+	border-top: 3px solid #ff6033;
+}
+.ba-menu li:hover  {
+	border-top: 3px solid #ff6033;
+}
+.ba-banner {
+	width: 50%;
+	padding: 228px 182px 402px 0;
+}
+.ba-banner__title {
+	font-size: 60px;
+	font-weight: 900;
+	margin: 0 0 0 -4px;
+}
+.ba-button__banner {
+	padding: 13px 25px;
+	background: #FF6033;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.ba-banner__text {
+	margin: 2px 0 30px;
+}
+.ba-scroll {
+	position: absolute;
+	left: 50%;
+	bottom: 62px;
+	margin-left: -12px;
+}
+/*ba-about*/
+.ba-about {
+	background: #00c4c4;
+}
+.ba-about__img {
+	width: 56%;
+	padding: 71px 0 63px 0;
+	position: relative;
+}
+.ba-about__img--position {
+	position: absolute;
+	top: 35px;
+	right: 57px;
+}
+.ba-about__body {
+	width: 44%;
+	padding: 169px 0 211px 15px;
+}
+.ba-about__title {
+	font-size: 90px;
+	line-height: 90px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+}
+.ba-about__body p {
+	margin: 16px 0 16px;
+	color: #fff;
+}
+/*ba-services*/
+.ba-services {
+	background: #70bfff;
+}
+.ba-services__list {
+	padding: 179px 50px 131px 100px;
+}
+.ba-services__list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ba-services__list li {
+	width: 400px;
+	height: 100px;
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 33px;
+	margin-bottom: 20px;
+	background: #FFF;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+.ba-services__list span {
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.ba-services__list img {
+	position: absolute;
+	top: 26px;
+	left: 324px;
+}
+.ba-services__list li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 100px;
+	background-color: rgb(157, 157, 157);
+	top: 0;
+	left: 300px;
+}
+.ba-services__body {
+	padding: 101px 0 10px 107px;
+	position: relative;
+}
+.ba-services__title {
+	font-size: 90px;
+	color: #fff;
+	margin: 0;
+	position: absolute;
+	top: 294px;
+	left: 24px;
+}
+
